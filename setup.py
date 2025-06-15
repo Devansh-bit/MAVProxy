@@ -18,6 +18,8 @@ package_data = ['modules/mavproxy_map/data/*.jpg',
                 'modules/mavproxy_magical/data/*.obj',
                 'modules/mavproxy_fieldcheck/*.txt',
                 'tools/graphs/*.xml',
+                'modules/mavproxy_localchat/docs/*',
+                'modules/mavproxy_localchat/*.txt',
 ]
 
 package_data.extend(package_files('MAVProxy/modules/mavproxy_cesium/app'))
@@ -91,6 +93,7 @@ on how to use MAVProxy.''',
                 'MAVProxy.modules.mavproxy_nokov',
                 'MAVProxy.modules.mavproxy_SIYI',
                 'MAVProxy.modules.mavproxy_chat',
+                'MAVProxy.modules.mavproxy_localchat',
                 'MAVProxy.modules.lib',
                 'MAVProxy.modules.lib.ANUGA',
                 'MAVProxy.modules.lib.MacOS',
