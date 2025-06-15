@@ -1,0 +1,15 @@
+This file describes system-level MAVProxy commands and utilities for managing autopilot state, rebooting, overriding RC inputs, running scripts, and other operational controls.
+
+# System commands:
+reboot                   # Reboot the autopilot
+setup                    # Enter setup (CLI) mode
+rc <chan> <value>        # Override RC input channel (e.g., rc 1 1000)
+rc all 0                 # Clear all RC overrides
+time                     # Show autopilot and ground station time
+script <file>            # Run script of MAVProxy commands
+shell <command>          # Run shell command
+status                   # Show latest autopilot packets and state
+exit                     # Exit MAVProxy (requires 'requireexit' option set)
+
+# Notes:
+- Use 'set requireexit True' to enable 'exit' command.

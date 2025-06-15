@@ -1,0 +1,16 @@
+This file details MAVProxy commands for creating, editing, loading, saving, and managing waypoint missions, including syntax, file operations, and mission execution.
+
+# Waypoint commands:
+wp list                  # List current waypoints
+wp load <file>           # Load waypoints from file
+wp save <file>           # Save waypoints to file
+wp clear                 # Delete all waypoints
+wp update <file> <n>     # Update waypoint n from file
+wp move <n>              # Move waypoint n (select on map)
+wp loop                  # Enable mission looping
+wp remove <n>            # Remove waypoint n
+wp set <n>               # Set current waypoint to n
+wp undo                  # Undo last waypoint change
+
+# Notes:
+- Use map module for GUI waypoint editing.

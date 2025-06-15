@@ -1,0 +1,20 @@
+This file documents MAVProxy commands and procedures for configuring, managing, and monitoring geofence boundaries to restrict UAV operation area, including loading, saving, and editing geofence coordinates.
+
+# Geofence overview:
+- Defines boundaries the UAV cannot cross.
+- Triggers failsafe (e.g., RTL) if breached.
+
+# Commands:
+fence list               # Show current geofence
+fence load <file>        # Load geofence coordinates from file
+fence save <file>        # Save current geofence to file
+fence draw               # Draw geofence on map (if loaded)
+fence enable             # Enable geofence failsafe
+fence disable            # Disable geofence failsafe
+fence clear              # Delete all geofence coordinates
+fence move <n>           # Move geofence point n (select new location on map)
+fence remove <n>         # Remove geofence point n
+
+# Notes:
+- Copter: geofence is a cylinder (radius/altitude).
+- Plane: geofence is a polygon.

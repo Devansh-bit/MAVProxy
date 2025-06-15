@@ -1,0 +1,22 @@
+This file explains MAVProxy commands for remotely arming and disarming the UAV, managing safety switches, and configuring or bypassing arming checks for safe vehicle operation.
+Arming and Disarming
+
+ARMING COMMANDS
+
+arm throttle                # Arm the vehicle (subject to arming checks)
+arm throttle force          # Force arm the vehicle (bypasses arming checks)
+disarm                      # Disarm the vehicle
+disarm force                # Force disarm the vehicle (even if flying)
+
+SAFETY SWITCH COMMANDS
+
+arm safetyon                # Turn the safety switch on
+arm safetyoff               # Turn the safety switch off
+
+ARMING CHECKS
+
+arm check X                 # Enable arming check X
+arm uncheck X               # Disable arming check X
+
+Where X can be one of the following:
+all, baro, compass, gps, ins, params, rc, voltage, battery, airspeed, logging, switch, gps_config, mission, rangefinder, system
